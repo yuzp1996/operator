@@ -81,6 +81,7 @@ release_yaml() {
     fi
 
     if [[ ${comp} == "dashboard" ]]; then
+      echo ${dest}
       sed -i '/aggregationRule/,+3d' ${dest}
     fi
 
