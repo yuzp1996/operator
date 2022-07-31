@@ -82,7 +82,7 @@ release_yaml() {
 
     if [[ ${comp} == "dashboard" ]]; then
       echo ${dest}
-      sed -i '/aggregationRule/,+3d' ${dest}
+#      sed -i '/aggregationRule/,+3d' ${dest}
     fi
 
     echo "Info: Added $comp/$releaseFileName:$version release yaml !!"

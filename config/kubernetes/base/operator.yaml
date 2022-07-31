@@ -36,7 +36,7 @@ spec:
         - "tektonconfig,tektonpipeline,tektontrigger,tektonhub,tektonchain,tektonresults,tektondashboard"
         - "-unique-process-name"
         - "tekton-operator-lifecycle"
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         env:
         - name: SYSTEM_NAMESPACE
           valueFrom:
@@ -75,7 +75,7 @@ spec:
         - "tektoninstallerset"
         - "-unique-process-name"
         - "tekton-operator-cluster-operations"
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         env:
           - name: SYSTEM_NAMESPACE
             valueFrom:
